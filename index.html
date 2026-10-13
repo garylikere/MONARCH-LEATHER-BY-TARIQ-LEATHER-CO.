@@ -23,35 +23,36 @@
 <body class="bg-darkBg text-gray-200 font-sans antialiased min-h-screen flex flex-col justify-between">
 
     <!-- Header / Navbar -->
-    <header class="bg-cardBg/90 backdrop-blur-md border-b border-gold/20 sticky top-0 z-40">
+    <header class="bg-cardBg/95 backdrop-blur-md border-b border-gold/20 sticky top-0 z-40 shadow-lg">
         <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
             <div>
                 <h1 class="text-2xl font-bold tracking-wider text-gold uppercase">Monarch Leather</h1>
-                <p class="text-xs text-gray-400 tracking-widest uppercase">Tariq Leather Co.</p>
+                <p class="text-[10px] text-gray-400 tracking-widest uppercase">Tariq Leather Co.</p>
             </div>
             <div class="flex items-center space-x-4">
                 <a href="#catalog" class="text-sm hover:text-gold transition">Catalog</a>
-                <button onclick="openAdminModal()" class="bg-gold/10 text-gold border border-gold/40 px-3 py-1.5 rounded-md text-xs font-semibold hover:bg-gold hover:text-black transition flex items-center gap-1.5">
+                <button onclick="openAdminModal()" class="bg-gold/10 text-gold border border-gold/40 px-3.5 py-1.5 rounded-md text-xs font-semibold hover:bg-gold hover:text-black transition flex items-center gap-1.5 shadow-md">
                     <i class="fa-solid fa-lock"></i> Admin Panel
                 </button>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="relative bg-gradient-to-b from-cardBg to-darkBg py-16 border-b border-gold/10 text-center px-4">
-        <div class="max-w-3xl mx-auto space-y-4">
-            <span class="inline-block bg-gold/10 text-gold text-xs px-3 py-1 rounded-full uppercase tracking-widest border border-gold/30">USA Export Quality</span>
-            <h2 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight">Premium Handcrafted Leather Jackets</h2>
-            <p class="text-gray-400 text-sm md:text-base max-w-xl mx-auto">
-                Full-grain genuine leather engineered for ultimate durability, comfort, and luxury finish. Available for Retail & B2B Wholesale Export.
+    <!-- Hero / Banner Section -->
+    <section class="relative bg-gradient-to-r from-cardBg via-neutral-900 to-darkBg py-20 border-b border-gold/20 text-center px-4 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#D4AF37_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-4xl mx-auto space-y-6 relative z-10">
+            <span class="inline-block bg-gold/15 text-gold text-xs px-4 py-1.5 rounded-full uppercase tracking-widest border border-gold/30 font-semibold shadow-lg">USA Export Quality • B2B & Retail</span>
+            <h2 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-tight">Handcrafted Luxury <span class="text-gold">Leather Jackets</span></h2>
+            <p class="text-gray-300 text-sm md:text-lg max-w-2xl mx-auto font-light">
+                Engineered from 100% genuine full-grain leather for ultimate durability, comfort, and modern USA fit. Direct wholesale and retail supply.
             </p>
             <!-- Social Media Connections -->
-            <div class="flex justify-center items-center space-x-6 pt-4">
-                <a href="https://instagram.com" target="_blank" class="text-gray-400 hover:text-gold text-xl transition" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://facebook.com" target="_blank" class="text-gray-400 hover:text-gold text-xl transition" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://tiktok.com" target="_blank" class="text-gray-400 hover:text-gold text-xl transition" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-                <a href="mailto:garylineker040@gmail.com" class="text-gray-400 hover:text-gold text-xl transition" title="Email Us"><i class="fa-solid fa-envelope"></i></a>
+            <div class="flex justify-center items-center space-x-5 pt-3">
+                <a href="https://instagram.com" target="_blank" class="w-10 h-10 rounded-full bg-cardBg border border-gold/30 flex items-center justify-center text-gray-300 hover:text-gold hover:border-gold transition text-lg shadow" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://facebook.com" target="_blank" class="w-10 h-10 rounded-full bg-cardBg border border-gold/30 flex items-center justify-center text-gray-300 hover:text-gold hover:border-gold transition text-lg shadow" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://tiktok.com" target="_blank" class="w-10 h-10 rounded-full bg-cardBg border border-gold/30 flex items-center justify-center text-gray-300 hover:text-gold hover:border-gold transition text-lg shadow" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="mailto:garylineker040@gmail.com" class="w-10 h-10 rounded-full bg-cardBg border border-gold/30 flex items-center justify-center text-gray-300 hover:text-gold hover:border-gold transition text-lg shadow" title="Email Us"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
     </section>
@@ -59,8 +60,11 @@
     <!-- Product Catalog Grid -->
     <main id="catalog" class="max-w-7xl mx-auto px-4 py-12 flex-grow">
         <div class="flex justify-between items-center mb-8 border-b border-gray-800 pb-4">
-            <h3 class="text-xl font-semibold text-white tracking-wide">Featured Collection</h3>
-            <span id="productCount" class="text-xs text-gray-500">Showing 0 Items</span>
+            <div>
+                <h3 class="text-2xl font-bold text-white tracking-wide">Featured Collection</h3>
+                <p class="text-xs text-gray-400 mt-1">Explore our exclusive lineup ready for export</p>
+            </div>
+            <span id="productCount" class="text-xs text-gold bg-gold/10 px-3 py-1 rounded-full border border-gold/20 font-semibold">Showing Items</span>
         </div>
 
         <!-- Products Grid -->
@@ -145,7 +149,37 @@
     </div>
 
     <script>
-        let products = JSON.parse(localStorage.getItem('monarch_products')) || [];
+        // Force default sample products if storage is empty or outdated
+        const defaultProducts = [
+            {
+                title: "Classic Vintage Biker Jacket",
+                price: "320",
+                tag: "USA Export Quality",
+                image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80",
+                desc: "Handcrafted from premium full-grain lambskin leather. Features heavy-duty YKK zippers, lapel collar, and breathable satin lining designed for modern USA fit."
+            },
+            {
+                title: "Executive Cafe Racer Leather",
+                price: "295",
+                tag: "B2B & Retail",
+                image: "https://images.unsplash.com/photo-1520975954732-35dd22299614?auto=format&fit=crop&w=800&q=80",
+                desc: "Sleek minimalist cafe racer design with snap-tab collar, zippered cuffs, and weather-resistant antique finish. Ideal for both wholesale export and retail."
+            },
+            {
+                title: "Rugged Heavyweight Bomber",
+                price: "350",
+                tag: "B2B Wholesale Only",
+                image: "https://images.unsplash.com/photo-1495105787522-5334e3ffa0ef?auto=format&fit=crop&w=800&q=80",
+                desc: "Built for extreme durability with thick cowhide leather, ribbed cuffs, and insulated interior lining. Perfect for winter collection wholesale orders."
+            }
+        ];
+
+        let products = JSON.parse(localStorage.getItem('monarch_products'));
+        if (!products || products.length === 0) {
+            products = defaultProducts;
+            localStorage.setItem('monarch_products', JSON.stringify(products));
+        }
+
         let currentBase64Image = '';
 
         function renderProducts() {
@@ -170,7 +204,7 @@
                     <div>
                         <div class="h-64 bg-darkBg overflow-hidden relative">
                             <img src="${p.image}" alt="${p.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                            <span class="absolute top-3 right-3 bg-black/70 text-gold border border-gold/30 text-[10px] px-2 py-0.5 rounded uppercase tracking-wider">${p.tag}</span>
+                            <span class="absolute top-3 right-3 bg-black/80 text-gold border border-gold/30 text-[10px] px-2.5 py-1 rounded-full uppercase tracking-wider font-semibold">${p.tag}</span>
                         </div>
                         <div class="p-5 space-y-2">
                             <h4 class="text-lg font-bold text-white group-hover:text-gold transition">${p.title}</h4>
@@ -179,7 +213,7 @@
                         </div>
                     </div>
                     <div class="p-5 pt-0 border-t border-gray-800/50 mt-4 flex justify-between items-center">
-                        <a href="mailto:garylineker040@gmail.com?subject=Inquiry: ${encodeURIComponent(p.title)}" class="text-xs text-gold border border-gold/30 px-3 py-1.5 rounded hover:bg-gold hover:text-black transition flex items-center gap-1">
+                        <a href="mailto:garylineker040@gmail.com?subject=Inquiry: ${encodeURIComponent(p.title)}" class="text-xs text-gold border border-gold/30 px-3 py-1.5 rounded hover:bg-gold hover:text-black transition flex items-center gap-1 font-semibold">
                             <i class="fa-solid fa-envelope"></i> Export Inquiry
                         </a>
                         <button onclick="deleteProduct(${idx})" class="text-xs text-red-500 hover:text-red-400 transition" title="Delete Item">
@@ -252,4 +286,5 @@
         renderProducts();
     </script>
 </body>
-</html>
+                        </html>
+                        
