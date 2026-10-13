@@ -1,10 +1,9 @@
- 
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monarch Leather | Tariq Leather Co. - Premium Export & B2B</title>
+    <title>Monarch Leather | Tariq Leather Co.</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
@@ -12,265 +11,245 @@
             theme: {
                 extend: {
                     colors: {
-                        gold: '#C5A059',
-                        darkBg: '#121212',
-                        cardBg: '#1E1E1E'
+                        gold: '#D4AF37',
+                        darkBg: '#0F0F0F',
+                        cardBg: '#1A1A1A'
                     }
                 }
             }
         }
     </script>
 </head>
-<body class="bg-darkBg text-zinc-100 font-sans antialiased selection:bg-gold selection:text-black">
-
-    <!-- Top Announcement Bar -->
-    <div class="bg-gold text-black text-xs font-bold text-center py-2 px-4 uppercase tracking-wider">
-        🔥 FREE Shipping Worldwide & B2B Bulk Export Available | Tariq Leather Co. x Monarch Leather
-    </div>
+<body class="bg-darkBg text-gray-200 font-sans antialiased min-h-screen flex flex-col justify-between">
 
     <!-- Header / Navbar -->
-    <header class="sticky top-0 z-50 bg-darkBg/95 backdrop-blur border-b border-zinc-800">
-        <div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
-            <button id="menu-toggle" class="text-2xl text-gold focus:outline-none md:hidden">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-
-            <!-- Brand Logo -->
-            <div class="text-center md:text-left">
-                <a href="#" class="text-xl md:text-2xl font-black uppercase tracking-widest text-white">
-                    MONARCH <span class="text-gold">LEATHER</span>
-                </a>
-                <p class="text-[10px] text-zinc-400 tracking-wider">BY TARIQ LEATHER CO.</p>
+    <header class="bg-cardBg/90 backdrop-blur-md border-b border-gold/20 sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div>
+                <h1 class="text-2xl font-bold tracking-wider text-gold uppercase">Monarch Leather</h1>
+                <p class="text-xs text-gray-400 tracking-widest uppercase">Tariq Leather Co.</p>
             </div>
-
-            <!-- Desktop Nav -->
-            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wide">
-                <a href="#home" class="hover:text-gold transition">Home</a>
-                <a href="#shop" class="hover:text-gold transition">Jackets</a>
-                <a href="#b2b" class="hover:text-gold transition text-gold">B2B Wholesale</a>
-                <a href="#admin-section" onclick="openAdminModal()" class="hover:text-gold transition text-zinc-400"><i class="fa-solid fa-lock"></i> Admin Panel</a>
-            </nav>
-
-            <!-- Right Actions -->
-            <div class="flex items-center gap-4">
-                <a href="https://wa.me/923122555142?text=Hello%2C%20I%20want%20to%20inquire%20about%20leather%20jackets." target="_blank" class="bg-gold text-black px-4 py-2 rounded-full font-bold text-xs uppercase tracking-wider hover:bg-white transition flex items-center gap-2">
-                    <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp
-                </a>
+            <div class="flex items-center space-x-4">
+                <a href="#catalog" class="text-sm hover:text-gold transition">Catalog</a>
+                <button onclick="openAdminModal()" class="bg-gold/10 text-gold border border-gold/40 px-3 py-1.5 rounded-md text-xs font-semibold hover:bg-gold hover:text-black transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-lock"></i> Admin Panel
+                </button>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="relative bg-gradient-to-b from-zinc-900 to-darkBg py-16 md:py-24 border-b border-zinc-800">
-        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-                <span class="text-gold uppercase text-xs font-bold tracking-widest bg-gold/10 px-3 py-1 rounded">USA Export Quality</span>
-                <h1 class="text-4xl md:text-6xl font-black uppercase tracking-tight mt-4 mb-6 leading-tight">
-                    Let's Craft Your Next <span class="text-gold">Masterpiece</span>
-                </h1>
-                <p class="text-zinc-400 text-sm md:text-base mb-8 leading-relaxed">
-                    Inspired by heritage, built for generations. Premium full-grain leather jackets designed for B2B wholesale, global distribution, and individual custom orders.
-                </p>
-                <div class="flex flex-wrap gap-4">
-                    <a href="#shop" class="bg-gold text-black px-8 py-3 font-bold uppercase tracking-wider rounded hover:bg-white transition">Shop Jackets</a>
-                    <a href="https://wa.me/923122555142" target="_blank" class="border border-gold text-gold px-8 py-3 font-bold uppercase tracking-wider rounded hover:bg-gold hover:text-black transition">Bulk Inquiry</a>
-                </div>
-            </div>
-            <div class="relative">
-                <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80" alt="Leather Jacket" class="rounded-lg shadow-2xl border border-zinc-800 object-cover w-full h-[400px]">
+    <section class="relative bg-gradient-to-b from-cardBg to-darkBg py-16 border-b border-gold/10 text-center px-4">
+        <div class="max-w-3xl mx-auto space-y-4">
+            <span class="inline-block bg-gold/10 text-gold text-xs px-3 py-1 rounded-full uppercase tracking-widest border border-gold/30">USA Export Quality</span>
+            <h2 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight">Premium Handcrafted Leather Jackets</h2>
+            <p class="text-gray-400 text-sm md:text-base max-w-xl mx-auto">
+                Full-grain genuine leather engineered for ultimate durability, comfort, and luxury finish. Available for Retail & B2B Wholesale Export.
+            </p>
+            <!-- Social Media Connections -->
+            <div class="flex justify-center items-center space-x-6 pt-4">
+                <a href="https://instagram.com" target="_blank" class="text-gray-400 hover:text-gold text-xl transition" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://facebook.com" target="_blank" class="text-gray-400 hover:text-gold text-xl transition" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://tiktok.com" target="_blank" class="text-gray-400 hover:text-gold text-xl transition" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="mailto:garylineker040@gmail.com" class="text-gray-400 hover:text-gold text-xl transition" title="Email Us"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
     </section>
 
-    <!-- Shop / Products Section -->
-    <section id="shop" class="py-16 max-w-7xl mx-auto px-4">
-        <div class="flex justify-between items-center mb-10">
-            <div>
-                <h2 class="text-2xl md:text-3xl font-black uppercase tracking-wider">Featured Collection</h2>
-                <p class="text-zinc-400 text-xs mt-1">Handcrafted Full Grain Leather Apparel</p>
-            </div>
-            <button onclick="openAdminModal()" class="bg-zinc-800 text-gold border border-gold/40 px-4 py-2 text-xs font-bold uppercase rounded hover:bg-gold hover:text-black transition">
-                <i class="fa-solid fa-plus"></i> Upload New Product
-            </button>
+    <!-- Product Catalog Grid -->
+    <main id="catalog" class="max-w-7xl mx-auto px-4 py-12 flex-grow">
+        <div class="flex justify-between items-center mb-8 border-b border-gray-800 pb-4">
+            <h3 class="text-xl font-semibold text-white tracking-wide">Featured Collection</h3>
+            <span id="productCount" class="text-xs text-gray-500">Showing 0 Items</span>
         </div>
 
-        <!-- Product Grid -->
-        <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Dynamic Products will load here -->
+        <!-- Products Grid -->
+        <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Dynamic products will be rendered here -->
         </div>
-    </section>
 
-    <!-- B2B Wholesale Section -->
-    <section id="b2b" class="bg-zinc-900 py-16 border-t border-b border-zinc-800 my-12">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-black uppercase tracking-wider mb-4">B2B / Wholesale & Bulk Export</h2>
-            <p class="text-zinc-400 text-sm mb-8">Looking to import top-quality leather jackets for your brand or retail store in the USA or worldwide? Get factory direct prices and custom private labeling.</p>
-            <a href="https://wa.me/923122555142?text=Hello%2C%20I%20am%20interested%20in%20B2B%20Wholesale%20orders." target="_blank" class="inline-block bg-gold text-black font-bold uppercase px-8 py-4 rounded hover:bg-white transition">
-                <i class="fa-brands fa-whatsapp mr-2"></i> Contact Wholesale Team (+92 312 2555142)
-            </a>
+        <!-- Empty State Message -->
+        <div id="emptyState" class="hidden text-center py-16 border border-dashed border-gray-800 rounded-xl">
+            <i class="fa-solid fa-box-open text-4xl text-gray-600 mb-3"></i>
+            <p class="text-gray-400 text-sm">No jackets listed in the catalog yet.</p>
+            <p class="text-xs text-gray-600 mt-1">Open the Admin Panel to upload your first jacket.</p>
         </div>
-    </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="bg-black text-zinc-400 py-12 border-t border-zinc-800">
-        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-            <div>
-                <h3 class="text-white font-bold uppercase tracking-wider mb-4">Monarch Leather</h3>
-                <p class="text-xs leading-relaxed">Crafted to perfection. Built to last. Premium leather jackets export by Tariq Leather Co.</p>
-            </div>
-            <div>
-                <h3 class="text-white font-bold uppercase tracking-wider mb-4">Connect With Us</h3>
-                <div class="flex gap-4 text-xl">
-                    <a href="#" class="hover:text-gold transition"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#" class="hover:text-gold transition"><i class="fa-brands fa-tiktok"></i></a>
-                    <a href="#" class="hover:text-gold transition"><i class="fa-brands fa-telegram"></i></a>
-                    <a href="https://wa.me/923122555142" target="_blank" class="hover:text-gold transition"><i class="fa-brands fa-whatsapp"></i></a>
-                </div>
-            </div>
-            <div>
-                <h3 class="text-white font-bold uppercase tracking-wider mb-4">Support & Orders</h3>
-                <p class="text-xs">WhatsApp: +92 312 2555142</p>
-                <p class="text-xs mt-1">Email: info@monarchleather.com</p>
-            </div>
-        </div>
-        <div class="text-center text-xs text-zinc-600 border-t border-zinc-900 pt-6">
-            Copyright © 2026 Monarch Leather & Tariq Leather Co. All Rights Reserved.
+    <footer class="bg-cardBg border-t border-gold/10 py-8 text-center text-xs text-gray-500">
+        <div class="max-w-7xl mx-auto px-4 space-y-3">
+            <p>&copy; 2026 Monarch Leather | Tariq Leather Co. All rights reserved.</p>
+            <p>Export Contact: <a href="mailto:garylineker040@gmail.com" class="text-gold hover:underline">garylineker040@gmail.com</a></p>
         </div>
     </footer>
 
-    <!-- Admin Modal -->
-    <div id="admin-modal" class="fixed inset-0 bg-black/80 z-50 hidden flex items-center justify-center p-4">
-        <div class="bg-cardBg border border-zinc-700 w-full max-w-lg rounded-lg p-6 relative">
-            <button onclick="closeAdminModal()" class="absolute top-4 right-4 text-zinc-400 hover:text-white text-xl"><i class="fa-solid fa-xmark"></i></button>
-            
-            <!-- Login View -->
-            <div id="admin-login-view">
-                <h3 class="text-xl font-black uppercase mb-4 text-gold">Admin Panel Login</h3>
-                <p class="text-xs text-zinc-400 mb-4">Enter PIN code to manage products (Default PIN: 1234)</p>
-                <input type="password" id="admin-pin" placeholder="Enter PIN (1234)" class="w-full bg-darkBg border border-zinc-700 rounded px-4 py-3 text-white mb-4 focus:border-gold outline-none">
-                <button onclick="verifyAdmin()" class="w-full bg-gold text-black font-bold uppercase py-3 rounded hover:bg-white transition">Login</button>
+    <!-- Admin Panel Modal -->
+    <div id="adminModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center hidden p-4">
+        <div class="bg-cardBg border border-gold/30 rounded-2xl w-full max-w-lg p-6 shadow-2xl relative">
+            <button onclick="closeAdminModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white"><i class="fa-solid fa-xmark text-lg"></i></button>
+
+            <!-- Step 1: Security PIN -->
+            <div id="pinSection" class="space-y-4">
+                <div class="text-center">
+                    <div class="w-12 h-12 bg-gold/10 text-gold rounded-full flex items-center justify-center mx-auto mb-2 text-xl border border-gold/30">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Admin Authentication</h3>
+                    <p class="text-xs text-gray-400">Enter Security PIN to Manage Catalog</p>
+                </div>
+                <div>
+                    <input type="password" id="pinInput" placeholder="Enter PIN (Default: 1234)" class="w-full bg-darkBg border border-gray-700 rounded-lg p-3 text-center text-white tracking-widest focus:border-gold outline-none">
+                </div>
+                <button onclick="verifyPin()" class="w-full bg-gold text-black font-semibold py-2.5 rounded-lg hover:bg-yellow-500 transition">Unlock Panel</button>
             </div>
 
-            <!-- Dashboard View -->
-            <div id="admin-dashboard-view" class="hidden">
-                <h3 class="text-xl font-black uppercase mb-4 text-gold">Add New Leather Jacket</h3>
-                <form id="product-form" onsubmit="addProduct(event)" class="space-y-4">
+            <!-- Step 2: Upload Form -->
+            <div id="uploadSection" class="hidden space-y-4">
+                <div class="border-b border-gray-800 pb-3 flex justify-between items-center">
+                    <h3 class="text-lg font-bold text-gold"><i class="fa-solid fa-plus-circle"></i> Add New Jacket</h3>
+                    <span class="text-xs bg-green-900/50 text-green-400 px-2 py-0.5 rounded border border-green-700">Authenticated</span>
+                </div>
+                <form id="productForm" onsubmit="handleProductSubmit(event)" class="space-y-3">
                     <div>
-                        <label class="block text-xs font-bold uppercase mb-1 text-zinc-400">Jacket Name</label>
-                        <input type="text" id="p-name" required placeholder="e.g. Vintage Biker Leather Jacket" class="w-full bg-darkBg border border-zinc-700 rounded px-3 py-2 text-white text-sm focus:border-gold outline-none">
+                        <label class="text-xs text-gray-400 block mb-1">Jacket Title</label>
+                        <input type="text" id="pTitle" required placeholder="e.g. Vintage Biker Lambskin Jacket" class="w-full bg-darkBg border border-gray-700 rounded p-2.5 text-sm text-white focus:border-gold outline-none">
+                    </div>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div>
+                            <label class="text-xs text-gray-400 block mb-1">Price (USD $)</label>
+                            <input type="number" id="pPrice" required placeholder="299" class="w-full bg-darkBg border border-gray-700 rounded p-2.5 text-sm text-white focus:border-gold outline-none">
+                        </div>
+                        <div>
+                            <label class="text-xs text-gray-400 block mb-1">Category / Tag</label>
+                            <select id="pTag" class="w-full bg-darkBg border border-gray-700 rounded p-2.5 text-sm text-white focus:border-gold outline-none">
+                                <option value="B2B & Retail">B2B & Retail</option>
+                                <option value="USA Export Quality">USA Export</option>
+                                <option value="B2B Wholesale Only">Wholesale Only</option>
+                            </select>
+                        </div>
                     </div>
                     <div>
-                        <label class="block text-xs font-bold uppercase mb-1 text-zinc-400">Price (USD $)</label>
-                        <input type="text" id="p-price" required placeholder="e.g. $189.00" class="w-full bg-darkBg border border-zinc-700 rounded px-3 py-2 text-white text-sm focus:border-gold outline-none">
+                        <label class="text-xs text-gray-400 block mb-1">Image Source (URL or Local File)</label>
+                        <input type="url" id="pImageUrl" placeholder="Paste Image URL..." class="w-full bg-darkBg border border-gray-700 rounded p-2.5 text-sm text-white focus:border-gold outline-none mb-1">
+                        <input type="file" id="pFile" accept="image/*" onchange="convertFileToBase64(event)" class="text-xs text-gray-400 file:mr-2 file:py-1 file:px-2 file:rounded file:border-0 file:bg-gold/20 file:text-gold hover:file:bg-gold/30">
                     </div>
                     <div>
-                        <label class="block text-xs font-bold uppercase mb-1 text-zinc-400">Image (Select from Phone or Image URL)</label>
-                        <input type="file" id="p-file" accept="image/*" class="w-full bg-darkBg border border-zinc-700 rounded px-3 py-2 text-white text-xs mb-2">
-                        <input type="text" id="p-image" placeholder="Or Paste Image Direct Link" class="w-full bg-darkBg border border-zinc-700 rounded px-3 py-2 text-white text-sm focus:border-gold outline-none">
+                        <label class="text-xs text-gray-400 block mb-1">Description (Max 350 Chars)</label>
+                        <textarea id="pDesc" maxlength="350" required rows="3" placeholder="Handcrafted from 100% full-grain leather for maximum durability and USA fit..." class="w-full bg-darkBg border border-gray-700 rounded p-2.5 text-sm text-white focus:border-gold outline-none"></textarea>
                     </div>
-                    <button type="submit" class="w-full bg-gold text-black font-bold uppercase py-3 rounded hover:bg-white transition">Save & Publish Product</button>
+                    <button type="submit" class="w-full bg-gold text-black font-semibold py-2.5 rounded-lg hover:bg-yellow-500 transition">Save to Catalog</button>
                 </form>
             </div>
         </div>
     </div>
 
-    <!-- JavaScript Logic -->
     <script>
-        let products = JSON.parse(localStorage.getItem('monarch_products')) || [
-            { id: 1, name: "Classic Bomber Lambskin Jacket", price: "$189.00", image: "https://images.unsplash.com/photo-1520975954732-35dd22299614?auto=format&fit=crop&w=600&q=80" },
-            { id: 2, name: "Men Black Genuine Biker Jacket", price: "$199.00", image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=600&q=80" },
-            { id: 3, name: "Vintage Distressed Brown Jacket", price: "$210.00", image: "https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&w=600&q=80" }
-        ];
+        let products = JSON.parse(localStorage.getItem('monarch_products')) || [];
+        let currentBase64Image = '';
 
         function renderProducts() {
-            const grid = document.getElementById('product-grid');
+            const grid = document.getElementById('productGrid');
+            const emptyState = document.getElementById('emptyState');
+            const countLabel = document.getElementById('productCount');
+
             grid.innerHTML = '';
-            products.forEach((p, index) => {
-                grid.innerHTML += `
-                    <div class="bg-cardBg border border-zinc-800 rounded-lg overflow-hidden group">
-                        <div class="h-72 overflow-hidden relative">
-                            <img src="${p.image}" alt="${p.name}" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                            <span class="absolute top-3 left-3 bg-black/70 text-gold text-xs font-bold px-2.5 py-1 rounded">B2B / Retail</span>
+            countLabel.innerText = `Showing ${products.length} Items`;
+
+            if (products.length === 0) {
+                emptyState.classList.remove('hidden');
+                return;
+            } else {
+                emptyState.classList.add('hidden');
+            }
+
+            products.forEach((p, idx) => {
+                const card = document.createElement('div');
+                card.className = 'bg-cardBg border border-gray-800 rounded-xl overflow-hidden shadow-xl flex flex-col justify-between hover:border-gold/50 transition group';
+                card.innerHTML = `
+                    <div>
+                        <div class="h-64 bg-darkBg overflow-hidden relative">
+                            <img src="${p.image}" alt="${p.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            <span class="absolute top-3 right-3 bg-black/70 text-gold border border-gold/30 text-[10px] px-2 py-0.5 rounded uppercase tracking-wider">${p.tag}</span>
                         </div>
-                        <div class="p-5">
-                            <h3 class="font-bold text-base mb-2 uppercase">${p.name}</h3>
-                            <div class="flex justify-between items-center mb-4">
-                                <span class="text-gold font-black text-lg">${p.price}</span>
-                                <span class="text-xs text-zinc-400">Full Grain Leather</span>
-                            </div>
-                            <div class="flex gap-2">
-                                <a href="https://wa.me/923122555142?text=I%20want%20to%20order%20${encodeURIComponent(p.name)}%20priced%20at%20${p.price}" target="_blank" class="flex-1 bg-gold text-black text-center font-bold text-xs uppercase py-3 rounded hover:bg-white transition">
-                                    <i class="fa-brands fa-whatsapp"></i> Buy via WhatsApp
-                                </a>
-                                <button onclick="deleteProduct(${index})" class="bg-red-900/40 text-red-400 px-3 py-3 rounded hover:bg-red-900 hover:text-white transition" title="Delete">
-                                    <i class="fa-solid fa-trash"></i>
-                                </button>
-                            </div>
+                        <div class="p-5 space-y-2">
+                            <h4 class="text-lg font-bold text-white group-hover:text-gold transition">${p.title}</h4>
+                            <p class="text-gold font-extrabold text-xl">$${p.price} <span class="text-xs text-gray-400 font-normal">USD</span></p>
+                            <p class="text-gray-400 text-xs leading-relaxed line-clamp-4">${p.desc}</p>
                         </div>
                     </div>
+                    <div class="p-5 pt-0 border-t border-gray-800/50 mt-4 flex justify-between items-center">
+                        <a href="mailto:garylineker040@gmail.com?subject=Inquiry: ${encodeURIComponent(p.title)}" class="text-xs text-gold border border-gold/30 px-3 py-1.5 rounded hover:bg-gold hover:text-black transition flex items-center gap-1">
+                            <i class="fa-solid fa-envelope"></i> Export Inquiry
+                        </a>
+                        <button onclick="deleteProduct(${idx})" class="text-xs text-red-500 hover:text-red-400 transition" title="Delete Item">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </div>
                 `;
+                grid.appendChild(card);
             });
         }
 
+        function convertFileToBase64(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onloadend = () => { currentBase64Image = reader.result; };
+                reader.readAsDataURL(file);
+            }
+        }
+
+        function handleProductSubmit(e) {
+            e.preventDefault();
+            const title = document.getElementById('pTitle').value;
+            const price = document.getElementById('pPrice').value;
+            const tag = document.getElementById('pTag').value;
+            const urlImg = document.getElementById('pImageUrl').value;
+            const desc = document.getElementById('pDesc').value;
+
+            const finalImg = urlImg || currentBase64Image || 'https://via.placeholder.com/400x500?text=Monarch+Leather';
+
+            products.push({ title, price, tag, image: finalImg, desc });
+            localStorage.setItem('monarch_products', JSON.stringify(products));
+
+            document.getElementById('productForm').reset();
+            currentBase64Image = '';
+            closeAdminModal();
+            renderProducts();
+        }
+
+        function deleteProduct(idx) {
+            if(confirm("Are you sure you want to delete this jacket?")) {
+                products.splice(idx, 1);
+                localStorage.setItem('monarch_products', JSON.stringify(products));
+                renderProducts();
+            }
+        }
+
         function openAdminModal() {
-            document.getElementById('admin-modal').classList.remove('hidden');
+            document.getElementById('adminModal').classList.remove('hidden');
         }
 
         function closeAdminModal() {
-            document.getElementById('admin-modal').classList.add('hidden');
-            document.getElementById('admin-login-view').classList.remove('hidden');
-            document.getElementById('admin-dashboard-view').classList.add('hidden');
-            document.getElementById('admin-pin').value = '';
+            document.getElementById('adminModal').classList.add('hidden');
+            document.getElementById('pinSection').classList.remove('hidden');
+            document.getElementById('uploadSection').classList.add('hidden');
+            document.getElementById('pinInput').value = '';
         }
 
-        function verifyAdmin() {
-            const pin = document.getElementById('admin-pin').value;
-            if (pin === '1234') {
-                document.getElementById('admin-login-view').classList.add('hidden');
-                document.getElementById('admin-dashboard-view').classList.remove('hidden');
+        function verifyPin() {
+            const pin = document.getElementById('pinInput').value;
+            if(pin === '1234') {
+                document.getElementById('pinSection').classList.add('hidden');
+                document.getElementById('uploadSection').classList.remove('hidden');
             } else {
-                alert('Wrong PIN! Default PIN is 1234');
+                alert('Incorrect PIN. Default is 1234');
             }
         }
 
-        function addProduct(e) {
-            e.preventDefault();
-            const name = document.getElementById('p-name').value;
-            const price = document.getElementById('p-price').value;
-            const fileInput = document.getElementById('p-file');
-            let imageUrl = document.getElementById('p-image').value;
-
-            if (fileInput.files && fileInput.files[0]) {
-                const reader = new FileReader();
-                reader.onload = function(uploadEvent) {
-                    products.unshift({ id: Date.now(), name, price, image: uploadEvent.target.result });
-                    localStorage.setItem('monarch_products', JSON.stringify(products));
-                    renderProducts();
-                    closeAdminModal();
-                    alert('Product uploaded successfully!');
-                };
-                reader.readAsDataURL(fileInput.files[0]);
-            } else if (imageUrl) {
-                products.unshift({ id: Date.now(), name, price, image: imageUrl });
-                localStorage.setItem('monarch_products', JSON.stringify(products));
-                renderProducts();
-                closeAdminModal();
-                alert('Product uploaded successfully!');
-            } else {
-                alert('Please provide an image file or image URL.');
-            }
-        }
-
-        function deleteProduct(index) {
-            if (confirm('Are you sure you want to delete this product?')) {
-                products.splice(index, 1);
-                localStorage.setItem('monarch_products', JSON.stringify(products));
-                renderProducts();
-            }
-        }
-
+        // Initial Load
         renderProducts();
     </script>
 </body>
 </html>
-
